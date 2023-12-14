@@ -14,7 +14,6 @@ const Calculator = observer(() => {
     const checkValidKey = dataValid.some(
       (item) => item === event.nativeEvent.data
     )
-    console.log(checkValidKey)
     if (checkValidKey) {
       calculatorStore.setCalculation(event.target.value)
     } else {
